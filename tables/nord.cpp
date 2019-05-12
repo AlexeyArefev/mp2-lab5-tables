@@ -9,7 +9,12 @@ pol nord:: find(string k) {
 	int i = 0;
 	while (arow[i].key != k) {
 		i++;
+		if (i == size) {
+			cout << "Полинома с таким именем не существует" << endl;
+			throw("Полинома с таким именем не существует");
+		}
 	} 
+	
 	cout << "Поиск в неупрорядоченной таблице " << i +1<< " итераций" << endl;
 	return arow[i].polinom;
 }

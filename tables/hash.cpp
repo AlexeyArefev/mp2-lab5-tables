@@ -26,6 +26,10 @@ pol hasht::find(string k) {
 	while (arow[s].key != k) {
 		s = (t + i * 3) % 64;
 		kk++;
+		if (s == t) {
+			cout << "Полинома с таким именем не существует" << endl;
+			throw("Полинома с таким именем не существует");			
+		}
 	}		
 	return arow[s].polinom;
 	cout << "Поиск в хеш таблице " << kk + 1 << " итераций" << endl;

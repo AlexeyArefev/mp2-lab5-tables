@@ -170,3 +170,39 @@ TEST(hasht, can_find_after_del_hash_tab)
 	a.del("tes");
 	EXPECT_EQ(p2, a.find("test"));
 }
+TEST(nord, cannt_find_nord_tab)
+{
+	nord  a;
+	row f;
+	pol p;
+	monom m(4, 100);
+	p.insert(m);
+	f.key = "test";
+	f.polinom = p;
+	a.insert(f);
+	ASSERT_ANY_THROW(a.find("tes"));
+}
+TEST(ord, cannt_find_ord_tab)
+{
+	ord  a;
+	row f;
+	pol p;
+	monom m(4, 100);
+	p.insert(m);
+	f.key = "test";
+	f.polinom = p;
+	a.insert(f);
+	ASSERT_ANY_THROW(a.find("tes"));
+}
+TEST(hasht, cannt_find_hash_tab)
+{
+	hasht  a;
+	row f;
+	pol p;
+	monom m(4, 100);
+	p.insert(m);
+	f.key = "test";
+	f.polinom = p;
+	a.insert(f);
+	ASSERT_ANY_THROW(a.find("tes"));
+}
