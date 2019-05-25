@@ -22,7 +22,7 @@ int main() {
 	pol temp_pol;
 	row temp_row;
 	while (f) {
-		cout << "Выберите операцию" << endl;
+		cout << "Выберите действие" << endl;
 		cout << "1)Добавить полином" << endl;
 		cout << "2)Найти полином" << endl;
 		cout << "3)Удалить полином" << endl;

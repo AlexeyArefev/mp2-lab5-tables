@@ -39,7 +39,6 @@ void hasht::del(string k) {
 	while (arow[s].key != k) {
 		s = (t + i * 3) % 64;
 		kk++;
-	}
-	bt[s] = false;	
+	}		
 	cout << "Удаление в хеш таблице " << kk + 1<< " итераций" << endl;
 }
